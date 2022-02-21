@@ -16,8 +16,8 @@
 		</div>
 		<ul>
 			<li><a href="index.php" class="active">HOME</a></li>
-			<li><a href="api.html">CALL  API</a></li>
-			<li><a href="aboutus.html">ABOUT US</a></li>
+			<li><a href="api.php">CALL  API</a></li>
+			<li><a href="aboutus.php">ABOUT US</a></li>
       <li><a href="signup.php">signup</a></li>
       <li><a href="login.php">login</a></li>
 		</ul>
