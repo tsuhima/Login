@@ -83,5 +83,21 @@ Test Cases for Dashboard Page
 -A message saying successfully loged in
 
 
+**7.0 Responsibilities**
+
+Harshith Emani
+- Backend Developer
+- Completed 8 Test cases
+- Worked with XAMPP and APACHE server
+
+Tansish Bugnait
+- Software Tester
+- Worked with multiple test cases and test plans
+- Viewed trial and error methods with php files
+
+Antonita Racheal
+- Frontend Developer
+- Worked with HTML, CSS and PHP files
+- Ran the test cases and displayed test results
 
 
