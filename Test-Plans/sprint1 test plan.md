@@ -37,7 +37,11 @@
 -   Sign-in page Requirement
 
 -   Database Requirement
--   Dashboard Page
+-   Dashboard Page Requirement
+-   Welcome Page Requirement
+-   About Us Page Requirement 
+-   Logout Page
+
 
 **4.0 Approach**
 
