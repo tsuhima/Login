@@ -37,6 +37,7 @@
 -   Sign-in page Requirement
 
 -   Database Requirement
+-   Dashboard Page
 
 **4.0 Approach**
 
