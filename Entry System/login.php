@@ -1,26 +1,47 @@
 <?php
- include_once 'header.php';
- ?>
+session_start();
+include "db_conn.php";
+if (isset($_POST['uname']) && isset($_POST['password'])) {
+    function validate($data){
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+     }
+
+    $uname = validate($_POST['uname']);
+	$pass = validate($_POST['password']);
 
 
+    if (empty($uname)) {
+		header("Location: index.php?error=User Name is required");
+	    exit();
+	}else if(empty($pass)){
+        header("Location: index.php?error=Password is required");
+	    exit();
+	}else{
+        $sql = "SELECT * FROM user WHERE user_name='$uname' AND password='$pass'";
+        $result = mysqli_query($conn, $sql);
+        if (mysqli_num_rows($result) === 1){
+            $row = mysqli_fetch_assoc($result);
+            if($row ['user_name'] === $uname && $row['password'] === $pass){
+                $_SESSION['user_name'] = $row['user_name'];
+            	$_SESSION['name'] = $row['name'];
+            	$_SESSION['id'] = $row['id'];
+                header("Location: home.php");
+                exit();
+            }else{
+                header("Location: index.php?error=Incorrect username or password");
+                exit();
+            }
+        }else{
+            header("Location: index.php?error=Incorrect username or password");
+	        exit();
+        }
 
-<section class="login-form">
-<h5>login</h5>
-<div class="login-form-form">
-<form action="includes/login.inc.php" method="post">
+    }
 
-<input type="text" name="uid" placeholder="username...">
-<input type="password" name="pwd" placeholder="password...">
-
-<button type="submit" name="submit">login</button>
-</form>
-</div>
-</section>
-
-
-
-
-
-<?php
- include_once 'footer.php';
- ?>=
+}else{
+    header("Location: index.php?error");
+	    exit();
+}

@@ -1,49 +1,63 @@
-<?php
- include_once 'header.php';
- ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIGN UP</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 
-<section class="signup-form">
-<h2>sign up</h2>
-<div class="signup-form-form">
-<form action="include/signup.inc.php" method="post">
-<input type="text" name="name" placeholder="Full name...">
-<input type="text" name="Emailid" placeholder="emailid...">
-<input type="text" name="uid" placeholder="username...">
-<input type="password" name="pwd" placeholder="password...">
-<input type="password" name="pwdrepeat" placeholder="repeatpassword...">
-<button type="submit" name="submit">sign up</button>
-</form>
-</div>
-<?php
-if (isset($_GET["error"])){
-     if ($_GET["error"] == "stmt failed"){
-        echo "<p>Fill in all fields</p>";
-    }
+     <video id="background-video" autoplay loop muted poster="black.jpg">
+        <source src="IndexBGV.mp4" type="video/mp4">
+      </video>
 
-else if ($_GET["error"] == "invaliduid"){
-    echo "<p>Choose a proper username!</p>";
-}
-else if ($_GET["error"] == "invalidemail"){
-    echo "<p>Choose a proper email!</p>";
-}
-else if ($_GET["error"] == "password doesnot match"){
-    echo "<p>Make sure the passowrds match!</p>";
-}
-else if ($_GET["error"] == "stmt failed"){
-    echo "<p>Something went wrong , try again!</p>";
-}
-else if ($_GET["error"] == "username taken"){
-    echo "<p>This username has already taken!</p>";
-}
-else if ($_GET["error"] == "none"){
-    echo "<p>Signed up!</p>";
-  }
-}
-?> 
-</section>
 
-}
+</head>
+<body>
+     <form action="signup-check.php" method="post">
+     	<h2>SIGN UP</h2>
+     	<?php if (isset($_GET['error'])) { ?>
+     		<p class="error"><?php echo $_GET['error']; ?></p>
+     	<?php } ?>
 
-<?php
- include_once 'footer.php';
- ?>
+          <?php if (isset($_GET['success'])) { ?>
+               <p class="success"><?php echo $_GET['success']; ?></p>
+          <?php } ?>
+
+          <label>Name</label>
+          <?php if (isset($_GET['name'])) { ?>
+               <input type="text" 
+                      name="name" 
+                      placeholder="Name"
+                      value="<?php echo $_GET['name']; ?>"><br>
+          <?php }else{ ?>
+               <input type="text" 
+                      name="name" 
+                      placeholder="Name"><br>
+          <?php }?>
+
+          <label>User Name</label>
+          <?php if (isset($_GET['uname'])) { ?>
+               <input type="text" 
+                      name="uname" 
+                      placeholder="User Name"
+                      value="<?php echo $_GET['uname']; ?>"><br>
+          <?php }else{ ?>
+               <input type="text" 
+                      name="uname" 
+                      placeholder="User Name"><br>
+          <?php }?>
+
+
+     	<label>Password</label>
+     	<input type="password" 
+                 name="password" 
+                 placeholder="Password"><br>
+
+          <label>Re Password</label>
+          <input type="password" 
+                 name="re_password" 
+                 placeholder="Re_Password"><br>
+
+     	<button type="submit">Sign Up</button>
+          <a href="index.php" class="ca">Already have an account?</a>
+     </form>
+</body>
+</html>
