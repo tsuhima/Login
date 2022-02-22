@@ -22,11 +22,7 @@
 
 **1.0 Introduction**
 
-    Created a website which enables a user to navigate to multiple pages
-    like the about us page, API calling page and the home page. The
-    website also comprises of a signup page which would allow the user
-    to create an account and then successfully login in order to land on
-    the website’s dashboard.
+Created a website that allows users to go to numerous sites, including the about us, API calling, and home pages. The website also has a signup page that allows users to establish an account and then successfully login to gain access to the website's dashboard.
 
 **2.0 Test Items**
 
