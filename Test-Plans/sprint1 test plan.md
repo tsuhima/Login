@@ -38,4 +38,20 @@
 
 -   Database Requirement
 
--   API response code
+**4.0 Approach**
+
+The approach to test the features would be by inputting correct and
+incorrect credentials in the signup and login page. To check the
+database requirement, we’ll see if the data is getting parsed correctly
+in our database and if our server is getting launched smoothly without
+any “Server error”.
+
+**5.0 Pass/Fail Criteria**
+
+To check the pass/fail criteria, we’ll try different username and
+password combinations for the signup and the login page. If the user is
+able to successfully sign-up and login, then the test case passes, but
+if the user is unable to sign-up or login, then the test case fails.
+Similarly, for the database requirement, if the user credentials get
+correctly parsed in our database, then it’s a pass otherwise it’s a
+fail.
