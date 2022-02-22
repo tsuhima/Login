@@ -101,3 +101,8 @@ Antonita Racheal
 - Ran the test cases and displayed test results
 
 
+**8.0 Schedule**
+Each testing assignment and test milestone has a specific timetable. We've listed the timeframes for each testing resource as well as the tools needed to execute them, such as the XAMPP server, MySQL, Apache, PHP files, and so on.
+
+In our test plan and test results, we've included all test milestones from the sprint 1 plan, as well as all item transmittal events. We spent over 20 days getting the Entry system up and its operations.
+
