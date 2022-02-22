@@ -60,3 +60,28 @@ if the user is unable to sign-up or login, then the test case fails.
 Similarly, for the database requirement, if the user credentials get
 correctly parsed in our database, then it’s a pass otherwise it’s a
 fail.
+
+**6.0 Testing Tasks**
+
+Test Cases for Registration Page
+-Username and password are mandatory fields 
+-Required and optional fields of the form 
+-Radio buttons and checkboxes are placed correctly 
+-The limit of the Password should be alphanumeric, along with special characters
+-Username and password Validation
+-User Interface should be perfect and user friendly 
+
+Test Cases for Login Page
+-User Interface, to check all the text boxes and buttons
+-Required Fields where it can be verified by not filling any data
+-User Login, When passing a correct username and invalid password
+-User Login to check if the password is entered in encrypted
+
+Test Cases for Dashboard Page
+-Able to view the users name on the dashboard
+-Able to see and exit or logout of the dashboard
+-A message saying successfully loged in
+
+
+
+
