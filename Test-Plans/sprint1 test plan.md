@@ -20,7 +20,7 @@
 
 <!-- -->
 
-1.  **Introduction**
+**1.0 Introduction**
 
     Created a website which enables a user to navigate to multiple pages
     like the about us page, API calling page and the home page. The
@@ -28,20 +28,20 @@
     to create an account and then successfully login in order to land on
     the website’s dashboard.
 
-2.  **Test Items**
-
-3.  **Features to be Tested**
-
--   Sign-up page Requirement
+**2.0 Test Items**
 
 -   Sign-in page Requirement
-
+-   Sign-up page Requiremnet
 -   Database Requirement
 -   Dashboard Page Requirement
 -   Welcome Page Requirement
 -   About Us Page Requirement 
 -   Logout Page
 
+
+**3.0 Features to be Tested**
+
+On the Login page, double-check that all labels and controls, such as text fields, buttons, and links, are there. Check that the labels' font type and size, as well as the content placed on the various parts, are legible. Check that the size, color, and UI of the various elements are in accordance with the standards. Check that the app's user interface (UI) is responsive, meaning that it adjusts to multiple screen resolutions and devices.
 
 **4.0 Approach**
 
@@ -102,6 +102,7 @@ Antonita Racheal
 
 
 **8.0 Schedule**
+
 Each testing assignment and test milestone has a specific timetable. We've listed the timeframes for each testing resource as well as the tools needed to execute them, such as the XAMPP server, MySQL, Apache, PHP files, and so on.
 
 In our test plan and test results, we've included all test milestones from the sprint 1 plan, as well as all item transmittal events. We spent over 20 days getting the Entry system up and its operations.
